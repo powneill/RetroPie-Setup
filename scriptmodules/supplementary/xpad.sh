@@ -30,7 +30,7 @@ function sources_xpad() {
     gitPullOrClone "$md_inst" https://github.com/paroj/xpad.git
     cd "$md_inst"
     # LED support (as disabled currently in packaged RPI kernel) and allow forcing MAP_TRIGGERS_TO_BUTTONS
-    applyPatch "$md_data/01_enable_leds_and_trigmapping.diff"
+    # applyPatch "$md_data/01_enable_leds_and_trigmapping.diff"
 }
 
 function build_xpad() {
